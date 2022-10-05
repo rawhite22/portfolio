@@ -1,17 +1,16 @@
-import SideMenu from '../components/SideMenu'
 import { useThemeContext } from '../hooks/useThemeContext'
-
-export default function Home() {
+import SideMenu from '../components/SideMenu'
+function Projects() {
   const { pageTransition, sideMenu } = useThemeContext()
-
   return (
     <main
-      id='home-page'
-      className={`home-container ${pageTransition ? 'hide' : 'show'}`}>
+      id='projects-page'
+      className={`projects-container ${pageTransition ? 'hide' : 'show'}`}>
       <div className='content'>
-        <p>Home</p>
+        <p>Projects</p>
       </div>
       <SideMenu sideMenu={sideMenu} />
     </main>
   )
 }
+export default Projects
