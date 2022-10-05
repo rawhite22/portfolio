@@ -28,7 +28,7 @@ function Contact() {
     <main
       id='contact-page'
       className={`contact-container ${pageTransition ? 'hide' : 'show'}`}>
-      <div className='content'>
+      <div className={`content ${sideMenu ? 'menu-open' : null}`}>
         <p>Contact</p>
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className='form-group'>
