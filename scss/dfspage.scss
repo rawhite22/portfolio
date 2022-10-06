@@ -1,6 +1,6 @@
 #dfs-page.dfs-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   .content {
     padding: 0 2rem;
     transition: var(--pg-transition-transition);
@@ -46,5 +46,36 @@
     transform: var(--pg-transition-transform-show);
     transition: var(--pg-transition-transition);
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #dfs-page.dfs-container {
+    min-height: 70vh;
+    .content {
+      padding: 0 5rem;
+      h2 {
+        font-size: 3rem;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+      }
+      h3 {
+        font-size: 2rem;
+
+        margin-bottom: 1rem;
+      }
+      .link-container {
+        a {
+          font-size: 2rem;
+
+          &:nth-of-type(1) {
+            margin-right: 1rem;
+          }
+        }
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
   }
 }

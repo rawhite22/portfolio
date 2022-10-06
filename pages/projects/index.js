@@ -26,6 +26,7 @@ function Projects() {
               </a>
             </Link>
           </div>
+          <p>Daily fantasy sports stats tracker</p>
           <p>
             Built using Next.js MongoDB. DFS stat tracker is a simple tool to
             track your spending on players salry versus the production
@@ -47,8 +48,9 @@ function Projects() {
               </a>
             </Link>
           </div>
+          <p>Music Discover app using the Spotify Api.</p>
           <p>
-            Built using Next.js, Next Auth spotify provider,Nodemailer,Next.js
+            Built using Next.js, Next Auth spotify provider,Nodemailer,Next.js.
             API routes
           </p>
 

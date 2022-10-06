@@ -8,11 +8,28 @@ footer.footer {
     margin-bottom: 0.5rem;
   }
   .link-container {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     a {
       font-size: 1.2rem;
       &:hover {
         color: dodgerblue;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  footer.footer {
+    .contact {
+      margin-bottom: 0.5rem;
+    }
+    .link-container {
+      margin-bottom: 1.5rem;
+      a {
+        font-size: 2.2rem;
+        &:hover {
+          color: dodgerblue;
+        }
       }
     }
   }

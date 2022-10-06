@@ -38,7 +38,9 @@ header.header {
   nav.hamburger {
     display: none;
   }
-  @media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 600px) {
+  header.header {
     .heading-title {
       display: none;
     }
@@ -86,6 +88,46 @@ header.header {
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header.header {
+    margin-bottom: 4rem;
+    padding: 0 3rem;
+    .heading-title {
+      font-size: 2.5rem;
+    }
+    .heading-title-mobile {
+      display: none;
+    }
+    nav.nav-container {
+      display: flex;
+      ul {
+        width: 250px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          border-bottom: none;
+          a {
+            font-size: 1.3rem;
+            &:hover,
+            &:focus {
+              border-bottom: 5px solid dodgerblue;
+            }
+          }
+        }
+        li.active {
+          border-bottom: 5px solid rgb(240, 240, 240);
+          pointer-events: none;
+        }
+      }
+    }
+    nav.hamburger {
+      display: none;
     }
   }
 }

@@ -1,6 +1,6 @@
 #projects-page.projects-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   .content {
     padding: 0 2rem;
     transition: var(--pg-transition-transition);
@@ -50,5 +50,45 @@
     transform: var(--pg-transition-transform-show);
     transition: var(--pg-transition-transition);
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #projects-page.projects-container {
+    min-height: 70vh;
+    .content {
+      padding: 0 5rem;
+
+      a {
+        font-size: 1.5rem;
+        &:hover {
+          color: dodgerblue;
+        }
+      }
+      h2 {
+        font-size: 3rem;
+      }
+      .project {
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+        .link-container {
+          a {
+            font-size: 2rem;
+
+            &:nth-of-type(1) {
+              margin-right: 0.5rem;
+            }
+            &:hover {
+              color: dodgerblue;
+            }
+          }
+        }
+      }
+    }
   }
 }

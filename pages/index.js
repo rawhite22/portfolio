@@ -3,6 +3,7 @@ import { useThemeContext } from '../hooks/useThemeContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link'
+import HeadComponent from '../components/Head'
 export default function Home() {
   const { pageTransition, sideMenu } = useThemeContext()
 
@@ -10,6 +11,7 @@ export default function Home() {
     <main
       id='home-page'
       className={`home-container ${pageTransition ? 'hide' : 'show'}`}>
+      <HeadComponent title={'Robert White | Home'} />
       <div className={`content ${sideMenu ? 'menu-open' : null}`}>
         <div className='intro'>
           <h2>Hello, I&#39;m Robert</h2>
