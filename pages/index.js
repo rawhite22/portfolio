@@ -16,15 +16,15 @@ export default function Home() {
           <p>I'm a full stack developer, living in the Raliegh-Durhman area.</p>
         </div>
         <div className='link-container'>
-          <Link href={'/'}>
+          <Link href='https://www.linkedin.com/in/robert-white-9a815224b/'>
             <a>
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon classname='welcome-links' icon={faLinkedin} />
             </a>
           </Link>
-          <Link href={'/'}>
+          <Link href='https://github.com/rawhite22'>
             <a>
               {' '}
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon classname='welcome-links' icon={faGithub} />
             </a>
           </Link>
         </div>

@@ -4,6 +4,37 @@
   .content {
     padding: 0 2rem;
     transition: var(--pg-transition-transition);
+    a {
+      &:hover {
+        color: dodgerblue;
+      }
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-weight: lighter;
+      margin-bottom: 0.5rem;
+    }
+    .project {
+      margin-bottom: 1rem;
+      h3 {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+      }
+      .link-container {
+        margin-bottom: 0.5rem;
+        a {
+          font-size: 1.2rem;
+
+          &:nth-of-type(1) {
+            margin-right: 0.5rem;
+          }
+          &:hover {
+            color: dodgerblue;
+          }
+        }
+      }
+    }
     &.menu-open {
       overflow: hidden;
       opacity: 0.2;

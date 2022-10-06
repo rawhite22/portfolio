@@ -2,6 +2,7 @@ import SideMenu from '../../components/SideMenu'
 import { useThemeContext } from '../../hooks/useThemeContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faBrowser } from '@fortawesome/pro-solid-svg-icons'
 import Link from 'next/link'
 
 function dfsstattracker() {
@@ -12,17 +13,21 @@ function dfsstattracker() {
       className={`dfs-container ${pageTransition ? 'hide' : 'show'}`}>
       <div className={`content ${sideMenu ? 'menu-open' : null}`}>
         <h2>DFS Tracker</h2>
-        <Link href={'/'}>
-          <a>
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        </Link>
+        <div className='link-container'>
+          <Link href={'https://github.com/rawhite22'}>
+            <a>
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </Link>
+          <Link href='https://dailyfootballtracker-drk1.vercel.app/'>
+            <a>
+              <FontAwesomeIcon icon={faBrowser} />
+            </a>
+          </Link>
+        </div>
         <p>
-          <Link href='https://dailyfootballtracker-drk1.vercel.app'>
-            DFS Tracker
-          </Link>{' '}
-          is a simple app for a group of friends and I to track how are weekly
-          daily fantasy teams do.
+          DFS Tracker is a simple app for a group of friends and I to track how
+          are weekly daily fantasy teams do.
         </p>
         <h3>Technologies</h3>
         <p>

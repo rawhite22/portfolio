@@ -1,10 +1,69 @@
 #home-page.home-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 
   .content {
     padding: 0 2rem;
     transition: var(--pg-transition-transition);
+    .intro {
+      h2 {
+        font-size: 1.8rem;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      margin-bottom: 0.5rem;
+    }
+    .link-container {
+      margin-bottom: 2rem;
+      a {
+        font-size: 1.6rem;
+        &:hover {
+          color: dodgerblue;
+        }
+      }
+    }
+    .about {
+      margin-bottom: 2rem;
+      h2 {
+        font-size: 1.8rem;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1rem;
+        &:nth-of-type(1) {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .featured-project {
+      margin-bottom: 2rem;
+      h2 {
+        font-size: 1.8rem;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1rem;
+        &:nth-of-type(1) {
+          margin-bottom: 0.5rem;
+        }
+      }
+      a {
+        &:hover {
+          color: dodgerblue;
+        }
+      }
+    }
     &.menu-open {
       overflow: hidden;
       opacity: 0.2;
@@ -20,5 +79,14 @@
     transform: var(--pg-transition-transform-show);
     transition: var(--pg-transition-transition);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    h2 {
+      font-weight: lighter;
+      font-size: 1.3rem;
+    }
   }
 }

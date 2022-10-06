@@ -14,16 +14,18 @@ function Projects() {
         <h2>Projects</h2>
         <div className='project'>
           <h3>DFS Stat Tracker</h3>
-          <Link href='/'>
-            <a>
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </Link>
-          <Link href='/'>
-            <a>
-              <FontAwesomeIcon icon={faBrowser} />
-            </a>
-          </Link>
+          <div className='link-container'>
+            <Link href='https://github.com/rawhite22'>
+              <a>
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </Link>
+            <Link href='https://dailyfootballtracker-drk1.vercel.app/'>
+              <a>
+                <FontAwesomeIcon icon={faBrowser} />
+              </a>
+            </Link>
+          </div>
           <p>
             Built using Next.js MongoDB. DFS stat tracker is a simple tool to
             track your spending on players salry versus the production you're
@@ -33,20 +35,23 @@ function Projects() {
         </div>
         <div className='project'>
           <h3>Discoverfy</h3>
-          <Link href='/'>
-            <a>
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </Link>
-          <Link href='/'>
-            <a>
-              <FontAwesomeIcon icon={faBrowser} />
-            </a>
-          </Link>
+          <div className='link-container'>
+            <Link href='https://github.com/rawhite22'>
+              <a>
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </Link>
+            <Link href='https://dscvrfy.vercel.app/'>
+              <a>
+                <FontAwesomeIcon icon={faBrowser} />
+              </a>
+            </Link>
+          </div>
           <p>
             Built using Next.js, Next Auth spotify provider,Nodemailer,Next.js
             API routes
           </p>
+
           <Link href='/projects/dscvrfy'>read more...</Link>
         </div>
       </div>

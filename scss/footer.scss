@@ -4,6 +4,16 @@ footer.footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  .contact {
+    margin-bottom: 0.5rem;
+  }
   .link-container {
+    margin-bottom: 0.5rem;
+    a {
+      font-size: 1.2rem;
+      &:hover {
+        color: dodgerblue;
+      }
+    }
   }
 }

@@ -16,7 +16,6 @@ function Header() {
     <header className='header'>
       <h1 className='heading-title'>Robert White</h1>
       <h1 className='heading-title-mobile'>RW</h1>
-
       <nav className='nav-container'>
         <ul>
           <li className={`${pathname === '/' ? 'active' : ''}`}>
