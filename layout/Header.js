@@ -14,17 +14,15 @@ function Header() {
   }
   return (
     <header className='header'>
-      <div className='site-title'>
-        <h1>Robert White</h1>
-      </div>
+      <h1 className='heading-title'>Robert White</h1>
+      <h1 className='heading-title-mobile'>RW</h1>
+
       <nav className='nav-container'>
         <ul>
           <li className={`${pathname === '/' ? 'active' : ''}`}>
             <Link href='/'>Home</Link>
           </li>
-          <li className={`${pathname === '/about' ? 'active' : ''}`}>
-            <Link href='/about'>About</Link>
-          </li>
+
           <li className={`${pathname === '/projects' ? 'active' : ''}`}>
             <Link href='/projects'>Projects</Link>
           </li>

@@ -1,3 +1,9 @@
 footer.footer {
-  height: 10vh;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .link-container {
+  }
 }

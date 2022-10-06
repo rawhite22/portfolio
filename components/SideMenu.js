@@ -9,9 +9,7 @@ function SideMenu({ sideMenu }) {
         <li className={`${pathname === '/' ? 'active' : ''}`}>
           <Link href='/'>Home</Link>
         </li>
-        <li className={`${pathname === '/about' ? 'active' : ''}`}>
-          <Link href='/about'>About</Link>
-        </li>
+
         <li className={`${pathname === '/projects' ? 'active' : ''}`}>
           <Link href='/projects'>Projects</Link>
         </li>

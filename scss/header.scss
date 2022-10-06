@@ -1,12 +1,15 @@
 header.header {
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  .site-title h1 {
+  .heading-title {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+  .heading-title-mobile {
+    display: none;
   }
   nav.nav-container {
     flex: 1 0;
@@ -28,6 +31,14 @@ header.header {
     display: none;
   }
   @media screen and (max-width: 600px) {
+    .heading-title {
+      display: none;
+    }
+    .heading-title-mobile {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
     nav.nav-container {
       display: none;
     }
