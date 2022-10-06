@@ -6,12 +6,12 @@ function Footer() {
   return (
     <footer className='footer'>
       <div className='link-container'>
-        <Link href={'/'}>
+        <Link href={'https://www.linkedin.com/in/robert-white-9a815224b/'}>
           <a>
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </Link>
-        <Link href={'/'}>
+        <Link href={'https://github.com/rawhite22'}>
           <a>
             {' '}
             <FontAwesomeIcon icon={faGithub} />
