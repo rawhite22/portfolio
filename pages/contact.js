@@ -6,12 +6,13 @@ function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState(null)
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log('sending')
+    setError(null)
+    setSending(true)
     let data = { name, email, message }
-
     const res = await fetch('api/contact', {
       method: 'POST',
       headers: {
@@ -20,20 +21,26 @@ function Contact() {
       },
       body: JSON.stringify(data),
     })
-
     const resData = await res.json()
-    console.log(resData)
+    if (resData.msg === 'success') {
+      setSending(false)
+      setEmail('')
+      setName('')
+      setMessage('')
+      setError(null)
+    }
   }
   return (
     <main
       id='contact-page'
       className={`contact-container ${pageTransition ? 'hide' : 'show'}`}>
       <div className={`content ${sideMenu ? 'menu-open' : null}`}>
-        <p>Contact</p>
+        <h2>Let's Connect</h2>
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className='form-group'>
             <label htmlFor='name'>Name</label>
             <input
+              required
               type='text'
               name='name'
               onChange={(e) => setName(e.target.value)}
@@ -42,6 +49,7 @@ function Contact() {
           <div className='form-group'>
             <label htmlFor='email'>Email</label>
             <input
+              required
               type='email'
               name='email'
               onChange={(e) => setEmail(e.target.value)}
@@ -49,13 +57,16 @@ function Contact() {
           </div>
           <div className='form-group'>
             <label htmlFor='message'>Message</label>
-            <input
+            <textarea
+              required
+              className='message'
               type='text'
               name='message'
+              rows='15'
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          <input type='submit' value='Submit' />
+          <input type='submit' value='Send' />
         </form>
       </div>
       <SideMenu sideMenu={sideMenu} />

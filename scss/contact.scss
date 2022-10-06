@@ -4,6 +4,22 @@
   .content {
     padding: 0 2rem;
     transition: var(--pg-transition-transition);
+    .message {
+      margin-bottom: 0.5rem;
+    }
+    input {
+      height: 2rem;
+      padding: 0 0.2rem;
+      font-size: 1.2rem;
+    }
+    textarea {
+      font-size: 1rem;
+      padding: 0.2rem;
+    }
+    input[type='submit'] {
+      display: block;
+      width: 100%;
+    }
     &.menu-open {
       overflow: hidden;
       opacity: 0.2;
