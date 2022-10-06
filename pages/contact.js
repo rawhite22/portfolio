@@ -35,7 +35,7 @@ function Contact() {
       id='contact-page'
       className={`contact-container ${pageTransition ? 'hide' : 'show'}`}>
       <div className={`content ${sideMenu ? 'menu-open' : null}`}>
-        <h2>Let's Connect</h2>
+        <h2>Let&#39;s Connect</h2>
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className='form-group'>
             <label htmlFor='name'>Name</label>

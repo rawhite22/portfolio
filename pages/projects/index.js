@@ -28,8 +28,8 @@ function Projects() {
           </div>
           <p>
             Built using Next.js MongoDB. DFS stat tracker is a simple tool to
-            track your spending on players salry versus the production you're
-            getiing from that position.
+            track your spending on players salry versus the production
+            you&#39;re getiing from that position.
           </p>
           <Link href='/projects/dfsstattracker'>read more...</Link>
         </div>

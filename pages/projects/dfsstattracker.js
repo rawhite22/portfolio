@@ -5,7 +5,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBrowser } from '@fortawesome/pro-solid-svg-icons'
 import Link from 'next/link'
 
-function dfsstattracker() {
+function Dfsstattracker() {
   const { pageTransition, sideMenu } = useThemeContext()
   return (
     <main
@@ -47,4 +47,4 @@ function dfsstattracker() {
     </main>
   )
 }
-export default dfsstattracker
+export default Dfsstattracker

@@ -12,8 +12,10 @@ export default function Home() {
       className={`home-container ${pageTransition ? 'hide' : 'show'}`}>
       <div className={`content ${sideMenu ? 'menu-open' : null}`}>
         <div className='intro'>
-          <h2>Hello, I'm Robert</h2>
-          <p>I'm a full stack developer, living in the Raliegh-Durhman area.</p>
+          <h2>Hello, I&#39;m Robert</h2>
+          <p>
+            I&#39;m a full stack developer, living in the Raliegh-Durhman area.
+          </p>
         </div>
         <div className='link-container'>
           <Link href='https://www.linkedin.com/in/robert-white-9a815224b/'>
@@ -32,9 +34,9 @@ export default function Home() {
           <h2>About</h2>
           <p>
             I am a self taught developer with a passion JavaScript. I enjoy
-            working with React and Next.js, or building API's with Node.js and
-            express. I enjoy learning new technologies, and working to become a
-            better developer everyday.
+            working with React and Next.js, or building API&#39;s with Node.js
+            and express. I enjoy learning new technologies, and working to
+            become a better developer everyday.
           </p>
           <p>
             Outside of working on becoming a better developer. I enjoy spending
@@ -48,8 +50,8 @@ export default function Home() {
           <h3>DFS Stat Tracker</h3>
           <p>
             Built using Next.js MongoDB. DFS stat tracker is a simple tool to
-            track your spending on players salry versus the production you're
-            getiing from that position.
+            track your spending on players salry versus the production
+            you&#39;re getiing from that position.
           </p>
           <Link href='/projects/dfsstattracker'>read more...</Link>
         </div>
