@@ -114,8 +114,7 @@ header.header {
           border-bottom: none;
           a {
             font-size: 1.3rem;
-            &:hover,
-            &:focus {
+            &:hover {
               border-bottom: 5px solid dodgerblue;
             }
           }
