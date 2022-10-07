@@ -15,7 +15,7 @@ function Projects() {
         <div className='project'>
           <h3>DFS Stat Tracker</h3>
           <div className='link-container'>
-            <Link href='https://github.com/rawhite22'>
+            <Link href='https://github.com/rawhite22/dailyfootballtracker'>
               <a>
                 <FontAwesomeIcon icon={faGithub} />
               </a>
@@ -37,7 +37,7 @@ function Projects() {
         <div className='project'>
           <h3>Discoverfy</h3>
           <div className='link-container'>
-            <Link href='https://github.com/rawhite22'>
+            <Link href='https://github.com/rawhite22/dscvrfy'>
               <a>
                 <FontAwesomeIcon icon={faGithub} />
               </a>
