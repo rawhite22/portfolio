@@ -33,7 +33,7 @@ function Dfsstattracker() {
         <p>
           DFS Tracker is built using Next.js.Custom Next Auth login handles the
           authentication along with JWT for the admin user to enter the scores
-          for the week.
+          for the week, update users, and or add new players to the app.
         </p>
         <p>
           To style the website I used SCSS compiled down to minified css files
