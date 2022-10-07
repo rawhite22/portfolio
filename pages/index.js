@@ -35,15 +35,15 @@ export default function Home() {
         <div className='about'>
           <h2>About</h2>
           <p>
-            I am a self taught developer with a passion for JavaScript. I enjoy
-            working with React and Next.js, or building API&#39;s with Node.js
-            and express. I enjoy learning new technologies, and working to
-            become a better developer everyday.
+            I am a self-taught developer with a passion for JavaScript. I enjoy
+            working with React and Next.js, or building APIs with Node.js and
+            express. I enjoy learning new technologies and working to become a
+            better developer daily.
           </p>
           <p>
             Outside of working on becoming a better developer. I enjoy spending
-            time with my dogs, fantasy sports, and finding new music. I have a
-            passion for sports data analytics, and using that research to
+            time with my dogs, fantasy sports, and finding new music. I am
+            passionate about sports data analytics and using that research to
             develop fantasy sports strategies.
           </p>
         </div>
@@ -52,8 +52,8 @@ export default function Home() {
           <h3>DFS Stat Tracker</h3>
           <p>
             Built using Next.js MongoDB. DFS stat tracker is a simple tool to
-            track your spending on players salry versus the production
-            you&#39;re getiing from that position.
+            track your spending on players' salary versus the production
+            you&#39;re getting from that position.
           </p>
           <Link href='/projects/dfsstattracker'>read more...</Link>
         </div>
