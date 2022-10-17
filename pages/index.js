@@ -66,7 +66,7 @@ export default function Home() {
             password they have an option to have a reset password link emailed
             to them.
           </p>
-          <Link href='/projects/dfsstattracker'>read more...</Link>
+          <Link href='/projects/thethirdline'>read more...</Link>
         </div>
       </div>
 

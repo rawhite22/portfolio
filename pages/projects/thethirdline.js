@@ -12,7 +12,7 @@ function Thethirdline() {
       id='dscvrfy-page'
       className={`dscvrfy-container ${pageTransition ? 'hide' : 'show'}`}>
       <div className={`content ${sideMenu ? 'menu-open' : null}`}>
-        <h2>Discoverfy</h2>
+        <h2>The Third Line</h2>
         <div className='link-container'>
           <Link href={'https://github.com/rawhite22'}>
             <a>
@@ -27,7 +27,7 @@ function Thethirdline() {
         </div>
         <p>
           The Third Line is a free-to-use fantasy hockey research tool. Using
-          the NHL stats API, plays and team stats are always up to date. Users
+          the NHL stats API, players and team stats are always up to date. Users
           can register for the site giving them access to a player watch list
           feature. Users can watch up to five players at a time. If a user
           forgets their password they have an option to have a reset password
@@ -42,7 +42,7 @@ function Thethirdline() {
         </p>
         <p>
           To style the website I used SCSS and custom media queries for a
-          responsive design
+          responsive design.
         </p>
       </div>
       <SideMenu sideMenu={sideMenu} />
