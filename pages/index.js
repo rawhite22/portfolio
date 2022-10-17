@@ -59,12 +59,7 @@ export default function Home() {
           <h3>The Third Line</h3>
           <p>
             Built using Next.js, MongoDB, and deployed to Vercel. This is a
-            free-to-use fantasy hockey research tool. Using the NHL stats API,
-            plays and team stats are always up to date. Users can register for
-            the site giving them access to a player watch list feature. Users
-            can watch up to five players at a time. If a user forgets their
-            password they have an option to have a reset password link emailed
-            to them.
+            free-to-use fantasy hockey research tool.
           </p>
           <Link href='/projects/thethirdline'>read more...</Link>
         </div>
