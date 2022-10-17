@@ -1,6 +1,7 @@
 import SideMenu from '../components/SideMenu'
 import { useThemeContext } from '../hooks/useThemeContext'
 import { useState } from 'react'
+import HeadComponent from '../components/Head'
 function Contact() {
   const { pageTransition, sideMenu } = useThemeContext()
   const [name, setName] = useState('')
@@ -34,6 +35,7 @@ function Contact() {
     <main
       id='contact-page'
       className={`contact-container ${pageTransition ? 'hide' : 'show'}`}>
+      <HeadComponent title={'Robert White | Contact'} />
       <div className={`content ${sideMenu ? 'menu-open' : null}`}>
         <h2>Let&#39;s Connect</h2>
         <form onSubmit={(e) => handleSubmit(e)}>

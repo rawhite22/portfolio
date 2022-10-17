@@ -4,12 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBrowser } from '@fortawesome/pro-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link'
+import HeadComponent from '../../components/Head'
 function Projects() {
   const { pageTransition, sideMenu } = useThemeContext()
   return (
     <main
       id='projects-page'
       className={`projects-container ${pageTransition ? 'hide' : 'show'}`}>
+      <HeadComponent title={'Robert White | Projects'} />
       <div className={`content ${sideMenu ? 'menu-open' : null}`}>
         <h2>Projects</h2>
         <div className='project'>
