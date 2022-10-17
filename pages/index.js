@@ -34,7 +34,8 @@ export default function Home() {
           <a
             style={{ marginLeft: '0.5rem' }}
             href='https://portfoliodocsanddata.s3.us-east-2.amazonaws.com/Robert_White_-_Web_Developer-3.pdf'
-            target='_blank'>
+            target='_blank'
+            rel='noreferrer'>
             Resume
           </a>
         </div>
