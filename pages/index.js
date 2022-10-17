@@ -28,7 +28,7 @@ export default function Home() {
           <Link href='https://github.com/rawhite22'>
             <a>
               {' '}
-              <FontAwesomeIcon classname='welcome-links' icon={faGithub} />
+              <FontAwesomeIcon className='welcome-links' icon={faGithub} />
             </a>
           </Link>
         </div>
@@ -49,11 +49,15 @@ export default function Home() {
         </div>
         <div className='featured-project'>
           <h2>Featured Project</h2>
-          <h3>DFS Stat Tracker</h3>
+          <h3>The Third Line</h3>
           <p>
-            Built using Next.js MongoDB. DFS stat tracker is a simple tool to
-            track your spending on players salary versus the production
-            you&#39;re getting from that position.
+            Built using Next.js, MongoDB, and deployed to Vercel. This is a
+            free-to-use fantasy hockey research tool. Using the NHL stats API,
+            plays and team stats are always up to date. Users can register for
+            the site giving them access to a player watch list feature. Users
+            can watch up to five players at a time. If a user forgets their
+            password they have an option to have a reset password link emailed
+            to them.
           </p>
           <Link href='/projects/dfsstattracker'>read more...</Link>
         </div>

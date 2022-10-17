@@ -56,7 +56,32 @@ function Projects() {
 
           <Link href='/projects/dscvrfy'>read more...</Link>
         </div>
+        <div className='project'>
+          <h3>The Third Line</h3>
+          <div className='link-container'>
+            <Link href='https://github.com/rawhite22/thethirdlinehockey'>
+              <a>
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </Link>
+            <Link href='https://thethirdlinehockey.vercel.app/'>
+              <a>
+                <FontAwesomeIcon icon={faBrowser} />
+              </a>
+            </Link>
+          </div>
+          <p>
+            Fantasy Hockey research tool using the unofficial NHL stats API.
+          </p>
+          <p>
+            Built using Next.js, Next Auth custom credentials
+            provider,Nodemailer,Next.js. API routes
+          </p>
+
+          <Link href='/projects/thethirdline'>read more...</Link>
+        </div>
       </div>
+
       <SideMenu sideMenu={sideMenu} />
     </main>
   )

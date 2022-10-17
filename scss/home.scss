@@ -22,8 +22,9 @@
       margin-bottom: 2rem;
       a {
         font-size: 1.6rem;
+        color: dodgerblue;
         &:hover {
-          color: dodgerblue;
+          color: rgba(30, 143, 255, 0.829);
         }
       }
     }
@@ -61,8 +62,9 @@
         }
       }
       a {
+        color: dodgerblue;
         &:hover {
-          color: dodgerblue;
+          color: rgba(30, 143, 255, 0.788);
         }
       }
     }
