@@ -16,12 +16,12 @@ function Dscvrfy() {
         <div className='link-container'>
           <Link href={'https://github.com/rawhite22'}>
             <a>
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub} /> Source Code
             </a>
           </Link>
           <Link href='https://dailyfootballtracker-drk1.vercel.app/'>
             <a>
-              <FontAwesomeIcon icon={faBrowser} />
+              <FontAwesomeIcon icon={faBrowser} /> Application
             </a>
           </Link>
         </div>
