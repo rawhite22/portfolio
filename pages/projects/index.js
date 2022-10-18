@@ -5,6 +5,7 @@ import { faBrowser } from '@fortawesome/pro-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link'
 import HeadComponent from '../../components/Head'
+import ProjectList from '../../components/ProjectList'
 function Projects() {
   const { pageTransition, sideMenu } = useThemeContext()
   return (
@@ -14,76 +15,35 @@ function Projects() {
       <HeadComponent title={'Robert White | Projects'} />
       <div className={`content ${sideMenu ? 'menu-open' : null}`}>
         <h2>Projects</h2>
-        <div className='project'>
-          <h3>DFS Stat Tracker</h3>
-          <div className='link-container'>
-            <Link href='https://github.com/rawhite22/dailyfootballtracker'>
-              <a>
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </Link>
-            <Link href='https://dailyfootballtracker-drk1.vercel.app/'>
-              <a>
-                <FontAwesomeIcon icon={faBrowser} />
-              </a>
-            </Link>
-          </div>
-          <p>Daily fantasy sports stats tracker</p>
-          <p>
-            Built using Next.js MongoDB. DFS stat tracker is a simple tool to
+        <ProjectList
+          title='DFS Stat Tracker'
+          ghLink='https://github.com/rawhite22/dailyfootballtracker'
+          appLink='https://dailyfootballtracker-drk1.vercel.app/'
+          portLink='/projects/dfsstattracker'
+          projectDescription='Daily fantasy sports stats tracker'
+          builtWith='Built using Next.js MongoDB. DFS stat tracker is a simple tool to
             track your spending on players salary versus the production
-            you&#39;re getting from that position.
-          </p>
-          <Link href='/projects/dfsstattracker'>read more...</Link>
-        </div>
-        <div className='project'>
-          <h3>Discoverfy</h3>
-          <div className='link-container'>
-            <Link href='https://github.com/rawhite22/dscvrfy'>
-              <a>
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </Link>
-            <Link href='https://dscvrfy.vercel.app/'>
-              <a>
-                <FontAwesomeIcon icon={faBrowser} />
-              </a>
-            </Link>
-          </div>
-          <p>Music Discovery app using the Spotify API.</p>
-          <p>
-            Built using Next.js, Next Auth spotify provider,Nodemailer,Next.js.
-            API routes
-          </p>
-
-          <Link href='/projects/dscvrfy'>read more...</Link>
-        </div>
-        <div className='project'>
-          <h3>The Third Line</h3>
-          <div className='link-container'>
-            <Link href='https://github.com/rawhite22/thethirdlinehockey'>
-              <a>
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </Link>
-            <Link href='https://thethirdlinehockey.vercel.app/'>
-              <a>
-                <FontAwesomeIcon icon={faBrowser} />
-              </a>
-            </Link>
-          </div>
-          <p>
-            Fantasy Hockey research tool using the unofficial NHL stats API.
-          </p>
-          <p>
-            Built using Next.js, Next Auth custom credentials
-            provider,Nodemailer,Next.js. API routes
-          </p>
-
-          <Link href='/projects/thethirdline'>read more...</Link>
-        </div>
+            you&#39;re getting from that position.'
+        />
+        <ProjectList
+          title='Discoverfy'
+          ghLink='https://github.com/rawhite22/dscvrfy'
+          appLink='https://dscvrfy.vercel.app/'
+          portLink='/projects/dscvrfy'
+          projectDescription='Music Discovery app using the Spotify API.'
+          builtWith='Built using Next.js, Next Auth spotify provider,Nodemailer,Next.js
+            API routes'
+        />
+        <ProjectList
+          title='The Third Line'
+          ghLink='https://github.com/rawhite22/thethirdlinehockey'
+          appLink='https://thethirdlinehockey.vercel.app/'
+          portLink='/projects/thethirdline'
+          projectDescription='Fantasy Hockey research tool using the unofficial NHL stats API.'
+          builtWith='Built using Next.js, Next Auth custom credentials
+            provider, Nodemailer, Next.js API routes'
+        />
       </div>
-
       <SideMenu sideMenu={sideMenu} />
     </main>
   )
