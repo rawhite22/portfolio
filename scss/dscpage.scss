@@ -1,6 +1,6 @@
 #dscvrfy-page.dscvrfy-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   .content {
     padding: 0 2rem;
     transition: var(--pg-transition-transition);
