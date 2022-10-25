@@ -16,7 +16,7 @@ export default function Home() {
         <div className='intro'>
           <h2>Hello, I&#39;m Robert</h2>
           <p>
-            I&#39;m a full stack developer, living in the Raliegh-Durham area.
+            I&#39;m a full stack developer, living in the Raleigh-Durham area.
           </p>
         </div>
         <div className='link-container'>
