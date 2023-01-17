@@ -9,8 +9,11 @@ function Contact() {
   const [message, setMessage] = useState('')
   const [sending, setSending] = useState(false)
   const [error, setError] = useState(null)
+  const [success, setSuccess] = useState(null)
+
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setSuccess(null)
     setError(null)
     setSending(true)
     let data = { name, email, message }
@@ -23,12 +26,14 @@ function Contact() {
       body: JSON.stringify(data),
     })
     const resData = await res.json()
+
     if (resData.msg === 'success') {
       setSending(false)
       setEmail('')
       setName('')
       setMessage('')
       setError(null)
+      setSuccess('Message Sent! Thank you for reaching out.')
     }
   }
   return (
@@ -46,6 +51,7 @@ function Contact() {
               type='text'
               name='name'
               onChange={(e) => setName(e.target.value)}
+              value={name}
             />
           </div>
           <div className='form-group'>
@@ -55,6 +61,7 @@ function Contact() {
               type='email'
               name='email'
               onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
           </div>
           <div className='form-group'>
@@ -66,10 +73,16 @@ function Contact() {
               name='message'
               rows='15'
               onChange={(e) => setMessage(e.target.value)}
+              value={message}
             />
           </div>
-          <input type='submit' value='Send' />
+          {sending ? (
+            <input type='submit' value='Sending' disabled={true} />
+          ) : (
+            <input type='submit' value='Send' />
+          )}
         </form>
+        {success && <p className='success-msg'>{success}</p>}
       </div>
       <SideMenu sideMenu={sideMenu} />
     </main>

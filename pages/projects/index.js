@@ -26,13 +26,12 @@ function Projects() {
             you&#39;re getting from that position.'
         />
         <ProjectList
-          title='Discoverfy'
-          ghLink='https://github.com/rawhite22/dscvrfy'
-          appLink='https://dscvrfy.vercel.app/'
-          portLink='/projects/dscvrfy'
-          projectDescription='Music Discovery app using the Spotify API.'
-          builtWith='Built using Next.js, Next Auth spotify provider,Nodemailer,Next.js
-            API routes'
+          title='Hockey Stat Repository'
+          ghLink='https://github.com/rawhite22/hockey_stat_scripts'
+          appLink={null}
+          portLink='/projects/hockeystatrepo'
+          projectDescription='NHl Research command line tool'
+          builtWith='JavaScript es6+, Node.js, Git'
         />
         <ProjectList
           title='The Third Line'

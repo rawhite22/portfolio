@@ -20,11 +20,13 @@ function ProjectList({
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </Link>
-        <Link href={appLink}>
-          <a>
-            <FontAwesomeIcon icon={faBrowser} />
-          </a>
-        </Link>
+        {appLink && (
+          <Link href={appLink}>
+            <a>
+              <FontAwesomeIcon icon={faBrowser} />
+            </a>
+          </Link>
+        )}
       </div>
       <p>{projectDescription}</p>
       <p>{builtWith}</p>
