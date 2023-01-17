@@ -42,11 +42,11 @@ export default function Home() {
         <div className='about'>
           <h2>About</h2>
           <p>
-            I am a self-taught developer with a passion for JavaScript and build
-            fast fully responsive web applications. I enjoy working with React
-            and Next.js, or building APIs with Node.js and express. I enjoy
-            learning new technologies and working to become a better developer
-            daily.
+            I am a self-taught developer with a passion for JavaScript and
+            building fast fully responsive web applications. I enjoy working
+            with React and Next.js, or building APIs with Node.js and express. I
+            enjoy learning new technologies and working to become a better
+            developer daily.
           </p>
           <p>
             Outside of working on becoming a better developer. I enjoy spending
